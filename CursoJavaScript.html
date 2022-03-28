@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <h1>Curso JavaScript</h1>
+    <script>
+        /*var hola= "Hola Mundo";
+        let hello= "Hello World";
+        console.log(hola);
+        console.log(hello);
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.hello);
+
+        var musica="Rock"
+        console.log("Variable Música antes del Bloque", musica)
+        {
+            var musica="Pop"
+            console.log("Variable Música dentro del bloque", musica);
+        }
+        console.log("Variable Música antes del Bloque", musica) */
+
+
+
+
+
+
+       /* let a;
+        const PI=3.1416;
+        //const Nueve;
+        console.log(PI)
+
+        //PI=3.15
+
+        a="Ejemplo"
+        console.log(a)
+
+        const objeto ={
+            nombre:"Marc",
+            edad:19
+        }
+
+        const colores=["Blanco","Negro","Azul"];
+
+        console.log(objeto);
+        console.log(colores);
+
+        objeto.correo="marc@gmail.com";
+        colores.push("naranja");
+
+        console.log(objeto);
+        console.log(colores);
+
+        ====Se pueden agregar propiedades porque es un valor compuesto, en cambio a los primitivos no====*/
+
+
+
+
+
+        /*
+        //Cadenas de texto/Strings
+        let nombre="Marc";
+        let apellido="Xu";
+        let saludo=new String("Hola Mundo");
+        let BIM="BIM es una metodología de trabajo colaborativa para la concepción y gestión de proyectos de edificación y obra civil. Dicha metodología centraliza toda la información de un proyecto -geométrica o 3D, tiempos o 4D, costes o 5D, ambiental o 6D, y mantenimiento o 7D- en un modelo digital desarrollado por todos sus agentes."
+
+        console.log(nombre,apellido,saludo)
+        console.log(
+            nombre.length,
+            apellido.length,
+            saludo.length,
+            nombre.toUpperCase(),
+            apellido.toLowerCase(),
+            BIM.includes("trabajo"),
+            BIM.includes("mundo")
+            )
+        */
+
+
+
+
+
+        /*
+        let nombre="Marc"
+        let apellido="Xu"
+
+        let saludo= `Hola mi nombre es ${nombre} ${apellido}`;
+        console.log(saludo);
+
+        let ul="<ul><li>Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ul>";
+
+        console.log(ul);
+
+        let ul2=`
+            <ul>
+                <li>Primavera</li>
+                <li>Verano</li>
+                <li>Otoño</li>
+                <li>Invierno</li>
+            </ul>
+        `;
+        
+        console.log(ul2);
+
+        let ul3="<ul>";
+
+            ul3 +="<li>Primavera</li>";
+            ul3 +="<li>Verano</li>";
+            ul3 +="<li>Otoño</li>";
+            ul3 +="<li>Invierno</li>";
+
+        ul3 +="</ul>";
+
+        console.log(ul3);
+        */
+
+
+
+
+
+        /*
+        let a= 2;
+        let b= new Number(1);
+        let c= 7.19;
+        let d="5.6";
+
+        console.log(a,b);
+        console.log(c.toFixed(1));
+        console.log(c.toFixed(5));
+        console.log(parseInt(c));
+        console.log(parseFloat(c));
+        console.log(typeof c, typeof d);
+        console.log(a + b);
+        console.log(c + parseInt(d)); // solo suma la parte entera
+        console.log(c + parseFloat(d));
+        console.log(c + Number.parseInt(d));
+        console.log(c + Number.parseFloat(d));
+        */
+
+
+
+
+
+        /*
+        let verdadero = true;
+        let falso = false;
+        let v=Boolean(true);
+        let f=Boolean(false);
+
+        console.log(verdadero,falso,v,f);
+        console.log(typeof verdadero, typeof falso);
+
+        console.log(Boolean(0));
+        console.log(Boolean(-7));
+        console.log(Boolean(""));
+        console.log(Boolean(" "));
+        */
+        
+
+
+
+
+        /*
+        let indefinida;
+        console.log(indefinida);
+
+
+        let nulo = null;
+        console.log(null);
+
+
+        let noEsUnNumero="hola"*3.7;
+        console.log(noEsUnNumero);
+        */
+
+
+
+
+
+        /*
+        function estoEsUnaFuncion(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+        }
+
+       
+        //estoEsUnaFuncion();
+
+        function UnaFuncionQueDevuelveValor(){
+            console.log("Uno");
+            return 19;
+            console.log("Dos");
+            console.log("Tres");
+            return "La función ha devuelto una cadena de texto";
+        }
+
+        let valorDeFuncion=UnaFuncionQueDevuelveValor();
+
+        console.log(valorDeFuncion);
+
+        function saludar(nombre,edad){
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+        }
+
+        saludar("Marc",19);
+        saludar();
+
+        //Funciones declaradas-Funciones expresadas
+
+        funcionDeclarada();
+
+        function funcionDeclarada(){
+            console.log("Esto es una función declarada, puede invocarse en cualquier parte del código incluso antes de que la función sea declarada");
+        }
+
+        funcionDeclarada();
+
+        funcionExpresada();
+
+        const funcionExpresada= function(){
+            console.log("Esto es una función expresada, es decir, una función que se le ha asignado como valor una variable, si invocamos esta función antes de definirla JS nos dirá...")
+       }
+
+       funcionExpresada();
+       */
+
+
+
+
+
+       /*
+       const a=[];
+       const b= [1,true,"Hola",["A","B","C",[1,2,3]]];
+
+       console.log(a);
+       console.log(b);
+       console.log(b.length);
+       console.log(b[2]);
+       console.log(b[0]);
+       console.log(b[3]);
+       console.log(b[3][2]);
+       console.log(b[3][3][0]);
+
+       const c= Array.of("X","Y","Z",9,8,7);
+       console.log(c);
+
+       const d=Array(100).fill(false);
+       console.log(d);
+
+       const e= new Array();
+       console.log(e);
+
+       const f= new Array (1,2,3,true,false);
+       console.log(f);
+
+       const colores= ["Rojo","Verde","Azul"];
+       console.log(colores);
+
+       colores.push("Negro");
+       console.log(colores);
+
+       colores.pop();
+       console.log(colores);
+
+       colores.forEach(function(el,index){
+           console.log(`<li id="${index}">${el}</li>`);
+       })
+
+       //index sirve para que lo enumere en la consola.
+       */
+
+
+
+
+
+       /*
+       let a= new String("Hola");
+
+        const b={}
+        console.log(b);
+
+        const c= new Object();
+        console.log(c);
+
+       const marc={
+           nombre:"Marc",
+           apellido:"Xu",
+           edad:19,
+           pasatiempos:["Hacer ejercicio","Quedar con amigos"],
+           soltero:false,
+           contacto: {
+               email:"marc@gmail.com",
+               twitter:"@marc",
+               movil:"666777888"
+           },
+           saludar:function(){
+            console.log(`Hola:)`)
+           },
+
+           decirMiNombre:function(){
+               console.log(`Hola me llamo ${this.nombre} tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter} en twitter`)
+           }
+       }
+
+        console.log(marc)
+        console.log(marc["nombre"]);
+        console.log(marc["apellido"]);
+        console.log(marc.nombre);
+        console.log(marc.apellido);
+        console.log(marc.edad);
+        console.log(marc.soltero);
+        console.log(marc.pasatiempos);
+        console.log(marc.pasatiempos[1]);
+        console.log(marc.contacto);
+        console.log(marc.contacto.twitter);
+        marc.saludar();
+        marc.decirMiNombre();
+
+        console.log(Object.keys(marc));
+        console.log(Object.values(marc));
+        console.log(marc.hasOwnProperty("nombre"));
+        console.log(marc.hasOwnProperty("nacimiento"));
+        */
+
+
+
+
+
+       /*
+        //Operadores
+
+        let a= 5+(5-10)*3;
+        let modulo= 5%2;
+
+        console.log(a);
+        console.log(modulo);
+
+        //Racionales 
+        /* >, < ,>= ,<=, ==, ===, !=, !==
+
+        console.log(8>9);
+        console.log(8<9);
+        console.log(8>=9);
+        console.log(9>=8);
+        console.log(7<7);
+        console.log(7<=7);
+
+        console.log(7==7);
+        console.log("7"==7);
+        console.log(0==false);
+
+        console.log(7===7);
+        console.log("7"===7);
+        console.log(0===false);
+
+        //Incremento-Decremento
+
+        let i = 2;
+
+        //console.log(i++);
+        // console.log(++i);
+
+
+       //Operador por unidad
+
+        //i = i + 2;
+        //i += 3;
+        //i /= 3;
+        //i*=3;
+        //i++;
+        //i--;
+        //i++;
+
+        console.log(i);
+
+
+        //Operadores lógicos
+            //!-Not
+            //||-Or
+            //&&-And
+
+        console.log(!true);
+        console.log(!false );
+        console.log((9===9)|| ("9"===9));
+        console.log((9==="9")|| ("9"===9));
+        console.log((9===9) && ("9"===9));
+        console.log((9===9)|| ("9"==="9"));
+
+        */
+
+
+
+
+
+       /*
+       //if-else
+       let edad= 17;
+
+       if(edad > 17){
+           console.log("Eres mayor de edad");
+       } else {
+           console.log("Eres menor de edad");
+       }
+
+
+       if(edad >= 17){
+           console.log("Eres mayor de edad");
+       } else {
+           console.log("Eres menor de edad");
+       }
+   
+
+       if(edad >= 18){
+           console.log("Eres mayor de edad");
+       } else {
+           console.log("Eres menor de edad");
+       }
+
+
+       if(edad < 18){
+           console.log("Eres menor de edad");
+       } else {
+           console.log("Eres mayor de edad");
+       }
+
+       if(edad <= 17){
+           console.log("Eres menor de edad");
+       } else {
+           console.log("Eres mayor de edad");
+       }
+
+       //if-else if-else
+
+        //Dejame Dormir 0hrs - 5hrs
+       //Buenos dias 6hrs - 12hrs
+       //Buenas tardes 13hrs - 18hrs
+       //Buenas noches 19hrs - 23hrs
+
+       let hora = 19;    
+       if(hora >= 0 && hora <=5){
+           console.log("Dejame dormir");
+       }else if(hora >= 6 && hora <=12){
+            console.log("Buenos días");
+       }else if(hora >=13 && hora <=18){
+            console.log("Buenas tardes");
+       }else{
+            console.log("Buenas noches");
+       }
+
+       // Operador ternario (condición)? verdadero:falsa
+
+       console.log("Operador Ternario");
+
+       var eresMayor= (edad >= 18)
+       ?"Eres mayor de edad"
+       :"Eres menor de edad";
+       console.log(eresMayor);
+
+
+       //switch-case
+
+       //lunes-1
+       //martes-2
+       //miercoles-3
+       //jueves-4
+       //viernes-5
+       //sabado-6
+       //domingo-7
+
+       let dia=8;
+
+       switch (dia) {
+           case 1:
+               console.log("Lunes");
+               break;
+            case 2:
+               console.log("Martes");
+               break;
+            case 3:
+               console.log("Miercoles");
+               break;
+            case 4:
+               console.log("Jueves");
+               break;
+            case 5:
+               console.log("Viernes");
+               break;
+            case 6:
+               console.log("Sabado");
+               break;
+            case 7:
+               console.log("Domingo");
+               break;
+           default:
+               console.log("El día no existe");
+               break;
+       }
+       */
+
+
+
+
+
+
+       /*
+       //Ciclos/Loops
+
+       let contador=0;
+
+       while(contador < 10){
+           console.log("while"+contador);
+           contador++;
+       }
+
+       do{
+        console.log("do while" + contador);
+        contador++;
+       } while(contador<10);
+    
+
+       /*for(inicialización de variable; condición; decremento o incremento; ){
+        sentencias que ejecuta el for
+       }
+
+
+       for (let i = 0; i < 10; i++) {
+          console.log("for",+i);   
+       }
+
+       let numeros=[10,20,30,40,50,60,70,80,90];
+       
+       for(let i=0; i< numeros.length; i++){
+        console.log(numeros[i]);
+       };
+
+       const marc={
+           nombre:"Marc",
+           apellido:"Xu",
+           edad:19
+       }
+       for (const propiedad in marc) {
+         console.log(`Key: ${propiedad}, Value ${marc[propiedad]} `);
+       }
+
+       let cadena="Hola Mundo";
+
+       for (const caracter of cadena) {
+           console.log(caracter);
+       }
+       */
+      
+
+
+
+
+       /*
+       try{
+           console.log("En try se inserta el código a evaluar");
+           noExiste;
+           console.log("Un segundo mensaje en el try");
+       } catch(error){
+           console.log("catch captura cualquier error del try")
+           console.log(error);
+       } finally{
+           console.log("En el bloque finally se ejecutará siempre al final de un bloque try-catch");
+       }
+
+
+
+       try{
+        var numero="i";
+        if(isNaN(numero)){
+            throw new Error("No es un numero")
+        }
+        console.log(numero*numero);
+       }catch(error){
+        console.log(`Se produjo el siguiente error: ${error}`);
+       }
+       */
+          
+
+
+
+
+       /*
+       //break & continue
+       const numero =[1,2,3,4,5,6,7,8,9];
+
+       for(let i=0; i< numero.length; i++){
+           if (i===5){
+            break;
+           }
+           console.log(numero[i]);
+       }
+
+
+        for(let i=0; i< numero.length; i++){
+         if (i===5){
+        continue;
+    }
+        console.log(numero[i]);
+    }
+    */
+       
+
+
+
+    
+    /*
+    //Destructuración
+
+    //Sin destructuración
+    const numeros=[1,2,3];
+
+    let uno=numeros[0],
+        dos=numeros[1],
+        tres=numeros[2];
+
+    console.log(uno,dos,tres);
+
+
+    //Con destructuración
+    const[one,two,three]=numeros;
+    console.log(one,two,three);
+
+    let persona={
+        nombre:"Marc",
+        apellido:"Xu",
+        edad:19
+    }
+
+    let {nombre, apellido,edad}=persona;
+    console.log(nombre, apellido, edad)
+    */
+
+
+
+
+
+
+    /*
+    //Objetos literales
+
+    let nombre="Roco",
+    edad=5;
+
+    const perro={
+        nombre: nombre,
+        edad: edad,
+        ladrar:function(){
+            console.log("guauu guauu!!!!")
+        }
+    }
+
+    //Simplificado
+    console.log(perro);
+    perro.ladrar()
+
+    const dog={
+        nombre,
+        edad,
+        raza:"Bulldog",
+        ladrar(){
+            console.log("guauu guauu guauu!!!!")
+        }
+    }
+
+    console.log(dog);
+    dog.ladrar();
+    */
+
+
+
+
+
+    /*
+    //Rest-Spread
+    function sumar(a,b,...c){
+        let resultado= a+b;
+
+        c.forEach(function(n){
+            resultado += n
+        });
+        return resultado;
+    }
+
+    console.log(sumar(1,2));
+    console.log(sumar(1,2,3));
+    console.log(sumar(1,2,3,4));
+    console.log(sumar(1,2,3,4,5));
+    console.log(sumar(1,2,3,4,5,6));
+    console.log(sumar(1,2,3,4,5,6,7));
+
+    
+    const arr1 =[1,2,3,4,5],
+        arr2=[6,7,8,9,10];
+
+    console.log(arr1,arr2);
+
+    const arr3 =[...arr1, ...arr2];
+
+    console.log(arr3);
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

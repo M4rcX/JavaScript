@@ -1,0 +1,18 @@
+body{
+    background-color: purple;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif
+}
+button{
+    font-size: 16px;
+    padding: 8px 16px;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}

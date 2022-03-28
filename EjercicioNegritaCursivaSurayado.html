@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formato texto</title>
+    <link rel="stylesheet" href="EjercicioNegritaCursivaSubrayado.css">
+</head>
+<body>
+    <h1>BIM</h1>
+    <div class="bloque">
+        <div id="text">
+            <p>
+                BIM (Building Information Modeling) es el proceso holístico de creación y administración de la información de un activo construido. Basado en un modelo inteligente e impulsado por una plataforma en la nube, BIM integra datos estructurados y multidisciplinares para generar una representación digital de un activo durante todo su ciclo de vida, desde la planificación y el diseño hasta la construcción y las operaciones.
+            </p>
+        </div>
+        <div class="botones">
+            <button id="italicButton">Cambiar a cursiva</button>
+            <button id="boldButton">Cambiar a negrita</button>
+            <button id="underlineButton">Cambiar a subrayado</button>
+            <button id="deleteStyleButton">Borrar estilos</button>
+        </div>
+    </div>
+    <script>
+
+        const italicButton =  document.getElementById("italicButton");
+
+        const boldButton = document.getElementById("boldButton");
+
+        const underlineButton = document.getElementById("underlineButton");
+
+        const deleteStyleButton = document.getElementById("deleteStyleButton");
+
+        const text = document.getElementById("text");
+
+        
+        italicButton.addEventListener("click", function(){
+            text.classList.add("italic");
+        });
+
+        boldButton.addEventListener("click", function(){
+            text.classList.add("bold");
+        });
+
+        underlineButton.addEventListener("click", function(){
+            text.classList.add("underline");
+        });
+
+        deleteStyleButton.addEventListener("click", function(){
+            text.classList.remove("italic","bold","underline")
+        })
+       
+
+
+        </script>
+</body>
+</html>

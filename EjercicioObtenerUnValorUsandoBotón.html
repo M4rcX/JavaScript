@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener el valor de la opción seleccionada</title>
+</head>
+
+<body>
+    <p>
+        Selecciona las opciones y dale click a enviar.
+    </p>
+
+    Género:
+    <input type="radio" name="Género" value="Hombre"> Hombre
+    <input type="radio" name="Género" value="Mujer"> Mujer
+    <input type="radio" name="Género" value="Otros"> Otros
+
+    <br>
+
+    Aficiones
+    <input type="radio" name="Aficiones" value="Hacer deporte"> Hacer deporte
+    <input type="radio" name="Aficiones" value="Ir al cine"> Ir al cine
+    <input type="radio" name="Aficiones" value="Salir con amigos"> Salir con amigos
+
+    <br>
+    <br>
+
+    <button type="button" onclick="displayRadioValue()">Enviar</button>
+    <br>
+    <div id="resultado"></div>
+
+    <script>
+        function displayRadioValue() {
+            document.getElementById("resultado").innerHTML = "";
+            var ele = document.getElementsByTagName("input");
+
+                for(i = 0; i < ele.length; i++) {
+
+                    if (ele[i].type="radio") {
+                        
+                        if(ele[i].checked)
+                            document.getElementById("resultado").innerHTML 
+                                += ele[i].name + ": "
+                                + ele[i].value + "<br>";
+                    }
+                }
+        }
+    </script>
+</body>
+</html>

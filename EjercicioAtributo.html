@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EjercicioAtributo.css">
+    <title>EjercicioAtributo</title>
+    <script>
+        function modify() {
+            //update style attribute of element "titulo"
+
+            var titulo = document.getElementById ("titulo");
+            titulo.setAttribute ("style", "color:blue");
+
+            //add style attribute to element "parrafo"
+
+            var parrafo= document.getElementById ("parrafo");
+            parrafo.setAttribute("style","color:yellow");
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color:black"
+        id="titulo">BIM</h1>
+    <p id="parrafo">
+        BIM es una metodología de trabajo colaborativa para la concepción y gestión de proyectos de edificación y obra civil. Dicha metodología centraliza toda la información de un proyecto -geométrica o 3D, tiempos o 4D, costes o 5D, ambiental o 6D, y mantenimiento o 7D- en un modelo digital desarrollado por todos sus agentes. 
+        </p>
+        <br>
+        <br>
+        <button onclick="modify()">Click para modificar</button>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioAtributo2</title>
+    <script>
+        function suma() {
+            //Obtener los valores de fNum y sNum usando getAttribute()
+
+            var fNum = Number ( document.getElementById("fNum").value);
+            var sNum = Number ( document.getElementById("sNum").value);
+            var result = fNum + sNum;
+
+            //Mostrar el resultado en color morado
+
+            var output ="La suma de los dos numeros es " + result;
+            document.getElementById("result").style = "color:red"
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color:purple" align="center">EjercicioAtributo2</h1>
+    <p align="center">
+        <b>Introcuzca el primer número:</b>
+        <input type="number" id="fNum">
+        <br>
+        <br>
+        <b>Introduzca el segundo número:</b>
+        <input type="number" id="sNum">
+        <br>
+        <br>
+        <button onclick="suma()">Sumar</button>
+        <b> <p id="result" align="center"></p></b>
+    </p>
+
+
+    
+</body>
+</html>
