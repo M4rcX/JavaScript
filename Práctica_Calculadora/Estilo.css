@@ -1,0 +1,39 @@
+
+#calculadora{
+    width: 500px;
+    height: 750px;
+    background-color: black;
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: repeat(4,90px);
+    grid-template-rows:120px repeat(6,90px);
+    justify-content: center;
+
+}
+#calculadora>button{
+    font-size: 18pt;
+    background-color: aqua;
+}
+#calculadora>button:hover{
+    background-color: gray;
+}
+
+.botoncols2{
+    grid-column: span 2 ;
+    
+}
+#pantalla{
+    height: 100px;
+    background-color: rgb(40, 132, 212);
+    grid-column: 1/-1;
+}
+
+#pantalla-superior{
+    color: black;
+    font-size: 15pt;
+}
+
+#pantalla-inferior{
+    color: black;
+    font-size: 15pt;
+}
