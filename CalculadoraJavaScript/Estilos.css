@@ -6,23 +6,23 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color:yellow;
 }
-.calculadora{
+#calculadora{
     width: 400px;
     padding: 20px;
     margin: 10px auto;
     background-color: black;
     border-radius:10px;
-    position: fixed;
+    /*position: fixed;
     left: 500pt;
-    top: 100pt;
+    top: 100pt;*/
 }
-.botones{
+#botones{
     display: grid;
     grid-gap:5px;
     grid-template-columns: repeat(4,auto);
     grid-template-rows: repeat(4,100px);
 }
-.botones>button{
+#botones>button{
     cursor:pointer;
     font-size: 50px;
     outline: none;
@@ -30,7 +30,7 @@ body{
     border-radius:10px;
     background-color:white;
 }
-.borrar>button{
+#borrar>button{
     margin: 5px;
     width: 100px;
     cursor: pointer;
@@ -41,28 +41,31 @@ body{
     background-color: gainsboro;
     color:black;
 }
-.borrar > button:hover{
+#borrar > button:hover{
       background-color: gray;
 }
-.botones > button:hover{
+#botones > button:hover{
       background-color: gray;
 }
-#cNaranja{
+#botones > .operador{
     background-color: orange;
 }
-.pantalla{
+#botones > #igual{
+    background-color: orange;
+}
+#pantalla{
     height: 120px;
     background-color: black;
     grid-column:1/-1;
     text-align: right;
     padding:10px 0;
 }
-.pantallaSuperior{
+#pantallaSuperior{
     font-size: 20pt;
     color:white;
     margin-bottom: 25px;
 }
-.pantallaInferior{
+#pantallaInferior{
     font-size: 30pt;
     color:white;
 }

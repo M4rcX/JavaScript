@@ -1,10 +1,3 @@
-const botonNumero = document.querySelectorAll("[numero]");
-const botonOperador = document.querySelectorAll("[operador]");
-const botonIgual = document.querySelector("[igual]");
-const botonborrarTodo = document.querySelector("[borrarTodo]");
-const botonBorrar = document.querySelector("[borrar]");
-const textoPantallaSuperior = document.querySelector("[pantallaSuperior]");
-const textoPantallaInferior = document.querySelector("[pantallaInferior]");
 
 class Calculadora{
     constructor(textoPantallaInferior, textoPantallaSuperior){
@@ -69,32 +62,4 @@ class Calculadora{
 }
 
 const calculadora = new Calculadora(textoPantallaInferior,textoPantallaSuperior);
-botonNumero.forEach(boton => {
-    boton.addEventListener("click", () => {
-        calculadora.tipoNumero(boton.innerText)
-        calculadora.imprimirDisplay()
-    })
-})
-
-botonBorrar.addEventListener("click", () => {
-    calculadora.borrar()
-    calculadora.imprimirDisplay()
-})
-
-botonborrarTodo.addEventListener("click", () => {
-    calculadora.borrarTodo()
-    calculadora.imprimirDisplay()
-})
-
-botonOperador.forEach(boton => {
-    boton.addEventListener("click", () => {
-        calculadora.tipoOperación(boton.innerText)
-        calculadora.imprimirDisplay()
-    })
-})
-
-botonIgual.addEventListener("click", () => {
-    calculadora.realizarCalculo()
-    calculadora.imprimirDisplay()
-})
 

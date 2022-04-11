@@ -9,34 +9,36 @@
 </head>
 <body>
 
-    <div class="calculadora">
-        <div class="pantalla">
-            <div class="pantallaSuperior" pantallaSuperior></div>
-            <div class="pantallaInferior" pantallaInferior></div>
+    <div id="calculadora">
+        <div id="pantalla">
+            <div id="pantallaSuperior" pantallaSuperior></div>
+            <div id="pantallaInferior" pantallaInferior></div>
         </div>
-        <div class="borrar">
-            <button borrarTodo>AC</button>
-            <button borrar>DEL</button>
+        <div id="borrar">
+            <button id="borrarTodo">AC</button>
+            <button id="borrar">DEL</button>
         </div>
-        <div class="botones">
-            <button numero>1</button>
-            <button numero>2</button>
-            <button numero>3</button>
-            <button operador id="cNaranja">+</button>
-            <button numero>4</button>
-            <button numero>5</button>
-            <button numero>6</button>
-            <button operador id="cNaranja">-</button>
-            <button numero>7</button>
-            <button numero>8</button>
-            <button numero>9</button>
-            <button operador id="cNaranja">*</button>
-            <button numero>0</button>
-            <button numero>.</button>
-            <button igual id="cNaranja">=</button>
-            <button operador id="cNaranja">/</button>
+        <div id="botones">
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" >+</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" >-</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" >*</button>
+            <button class="numero">0</button>
+            <button class="numero">.</button>
+            <button id="igual" >=</button>
+            <button class="operador" >/</button>
         </div>
     </div>
+    <script src="Constantes.js"></script>
+    <script src="Eventos.js"></script>
     <script src="Calculadora.js"></script>
 </body>
 </html>
