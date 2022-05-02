@@ -1,0 +1,61 @@
+{ 
+    "CollectionName": "ProyectosIfc", 
+    "CodigoProyecto": "434_Borrador", 
+    "PathProjectServer": "", 
+    "Nombre": "434_ElectrificaciónAlicanteNazaret_Borrador", 
+    "Descripcion": "434_ElectrificaciónAlicanteNazaret_Borrador", 
+    "CodigoCliente": "Cobra", 
+    "CodigoContratista": "FGV", 
+    "Users": [ 
+        "605cc1a9f63e609c14d353a6", 
+        "60acd7058a413ee4673e6d4e", 
+        "606f3a2e74459a95cd5799e5", 
+        "60181887a72166d86aea218c", 
+        "61309f54695b2b753d917e62", 
+        "60b906f27d57ec263d21c43b", 
+        "60bf48dca305671ddfd0a6f3", 
+        "618d0b7d1c482efb4ba9f1eb" 
+    ], 
+    "PathLogos": [], 
+    "ConfigParameters": [ 
+        { 
+            "Param": "01_FGV_IDENT", 
+            "HtmlElement": "", 
+            "Visible": true 
+        }, 
+        { 
+            "Param": "02_FGV_MEDICIONES", 
+            "HtmlElement": "", 
+            "Visible": true 
+        }, 
+        { 
+            "Param": "05_FGV_OBRA", 
+            "HtmlElement": "", 
+            "Visible": true 
+        }, 
+        { 
+            "Param": "08_FGV_SAP", 
+            "HtmlElement": "", 
+            "Visible": true 
+        }, 
+        { 
+            "Param": "11_COBRA", 
+            "HtmlElement": "", 
+            "Visible": true 
+        } 
+    ], 
+    "WebAppModulesIds": [ 
+        "60819b8ea23cb2000460f769", 
+        "60819b8ea23cb2000460f76c", 
+        "60819b8ea23cb2000460f76f", 
+        "60819b8ea23cb2000460f775", 
+        "60819b8ea23cb2000460f778", 
+        "60819b8ea23cb2000460f77b", 
+        "60819b8ea23cb2000460f77e", 
+        "60819b8ea23cb2000460f781", 
+        "60819b8ea23cb2000460f787" 
+    ], 
+    "TablesIfcIds": [], 
+    "Id": "60aca04d8a413ee4673e6c92", 
+    "IsActive": true 
+}
